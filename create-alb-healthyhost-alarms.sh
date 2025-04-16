@@ -2,7 +2,7 @@ MFA_PROFILE=mfa
 
 file=$1
 action=$2
-loadbalancer=app/mytransit-alb/9a574b1adf56f6be
+loadbalancer=$3
 
 while IFS= read -r targetgroup; do
 	echo "Creating alarm for target group: $targetgroup" 
